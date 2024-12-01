@@ -1,0 +1,39 @@
+.header {
+    background-color: $bcg-color;
+}
+.header__out {
+}
+.header__inner {
+    @include flexlar(space-between, 0);
+    padding-top: 35px;
+    padding-bottom: 35px;
+
+}
+.header__link {
+}
+.header__logo {
+}
+.header__list {
+    @include flexlar(start, 20px);
+}
+.header__item {
+}
+.header__item-link {
+    color: $text-color;
+}
+.header__burbtn {
+    display: none;
+    background-color: transparent;
+    border: none;
+}
+.header__btn-img {
+}
+
+@media only screen and (max-width: 487px){
+    .header__list{
+        display: none;
+    }
+    .header__burbtn{
+        display: block;
+    }
+}

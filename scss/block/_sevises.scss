@@ -1,0 +1,128 @@
+.servises {
+}
+.servises__out {
+}
+.serivises__inner {
+    padding-top: 35px;
+    padding-bottom: 135px;
+}
+.servises__suptitle {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20px;
+    letter-spacing: 5px;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: $bcg-color;
+}
+.servivses__title {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 50px;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    margin-top: 16px;
+
+}
+.servises__text {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 25px;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    margin-top: 16px;
+
+}
+.servises__list {
+    @include flexlar(space-between, 0);
+    margin-top: 78px;
+}
+.servises__item {
+    box-shadow: 3px 4px 12px 1px #00000040;
+    padding: 46px 30px;
+}
+.servises__item-suptext {
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 18.75px;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    
+}
+.servises__item-supspan {
+    @include flexlar(center, 9px)
+
+}
+.servises__item-span-title {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 50px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+
+}
+.servises__item-span-text {
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 18.75px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: $grey-color;
+
+}
+.servises__item-infotext {
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 18.75px;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: $grey-color;
+    max-width: 279px;
+    margin-top: 10px;
+    margin-bottom: 52px;
+}
+.servises__item-list {
+    @include flexlar(start, 14px);
+    max-width: 203px;
+    flex-wrap: wrap;
+    margin-bottom: 58px;
+}
+.servises__item-item {
+    padding-left: 36px;
+}
+.serivises__item-item-text {
+    position: relative;
+
+}
+.serivises__item-item-text::before{
+    content: "";
+    position: absolute;
+    background-image: url("/images/check-lg\ 1.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 25px;
+    height: 25px;
+    left: -30px;
+    top: -5px;
+
+}
+.servises__item-link {
+    background-color: $dark-color;
+    color: $text-color;
+    padding: 13px 29px;
+    border-radius: 5px;
+}
+
+@media only screen and (max-width: 1070px){
+    .servises__list{
+        @include flexlar(start, 10px);
+        flex-direction: column;
+    }
+}

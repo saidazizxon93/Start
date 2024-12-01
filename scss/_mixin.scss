@@ -1,0 +1,6 @@
+@mixin flexlar($j-c, $gap){
+    display: flex;
+    align-items: center;
+    justify-content: $j-c;
+    gap: $gap;
+}
